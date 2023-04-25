@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/stylep.css">
+    <title>树洞</title>
+</head>
+
+<body>
+    <div id="All">
+        <div id="Page">
+            <div id="Top">
+                <div id="Title">
+                    <a href="#"><img src="../images/1.png" alt="树洞" width="100px" /></a>
+                </div>
+            </div>
+            <div id="Nav">
+                <ul>
+                    <li><a href="../html/index.php">首页</a></li>
+                    <li><a href="#">热门</a></li>
+                    <li><a href="#">最新</a></li>
+                    <li><a href="#">关注</a></li>
+                    <li><a href="sendp.html">发帖</a></li>
+                    <li><a href="myArticle.php">我的文章</a></li>
+                </ul>
+            </div>
+            <div id="send">
+                <div class="fabu">
+                    <li>发布新帖</li>
+                </div>
+                <!-- 发送数据到PHP-->
+                <form class="form" action="../php/article Publishing page.php" method="POST">
+                    <div class="input-title">
+                        <!-- <input type="text" placeholder="标题"> -->
+                    </div>
+                    <div class="input-content">
+                        <ul>
+                            <li><img src="../images/图片.png"><a href="#">图片</a></li>
+                            <li><img src="../images/视频.png"><a href="#">视频</a></li>
+                            <li><img src="../images/标签.png"><a href="#">标签</a></li>
+                        </ul>
+                    </div>
+                    <textarea class="text" placeholder="内容" name="text"></textarea>
+                    <div class="submit"><button type="submit">发 表</button></div>
+                </form>
+            </div>
+            <div id="Bottom">
+                <h3 id="copy">&copy 南京邮电大学通达学院 挑战杯 树洞</h3>
+            </div>
+        </div>
+
+</body>
+
+</html>

@@ -1,0 +1,29 @@
+<!-- 新增页面，PC端无法打开 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>请在移动端打开</title>
+    <link rel="stylesheet" href="css/tuantuan.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="shortcut icon" href="images/fivicon.ico" type="image/x-icon">
+    <script src="js/tuantuan.js"></script>
+</head>
+
+<body>
+
+    <div class="egg">
+        <h1>PC端不支持打开该页面，请在移动端打开</h1>
+    </div>
+
+    <script>
+        if (/mobile/i.test(navigator.userAgent)) {
+            window.location = 'index.html';
+        }
+    </script>
+</body>
+
+</html>

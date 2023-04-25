@@ -1,0 +1,220 @@
+#header>.header-two{
+	height:31px;
+	width:100%;
+	background-color:145,212,255
+	}
+.content-width{
+		position:relative;width:1190px;margin:0 auto
+		}
+.text-font{
+			display:inline-block;font-size:12px;color:#999;height:31px;line-height:31px
+			}
+#header .ul-one{float:right}
+#header .header-li{
+	float:left
+}
+
+
+
+body{
+	margin:0;
+	padding:0;
+	font-size:14px;
+	background:#91d4ff  repeat-x;
+}/*顶部背景图，默认黑色可更换*/
+
+ul{/*表单*/
+	list-style-type:none;
+	list-style-position : outside;
+	margin:0 0 0 0;
+	padding:0 0 0 0;
+}
+
+#send{/*发帖页*/
+	background:#fff;
+	padding:20px;
+	margin-bottom:20px;}
+
+
+/*————————————各板块————————————*/
+#All{
+	width:1024px;
+	margin:0 auto;
+	padding:0 0 0 0;
+	text-align:center;
+	background:url("../images/")repeat-x;
+	background-position: center top;
+}
+
+#Page{
+	width:100%;
+	margin:0 auto;
+	padding:0 0 0 0;
+	text-align:center;
+	text-align:center;
+	background:url("../images/bg-bottom.png") repeat-x 0 bottom;
+}
+
+#Middle{
+	width:980px;
+	margin:0 auto;
+	padding:0 0 0 0;
+	text-align:left;
+}
+
+#Top{
+	width:980px;
+	margin:0 auto;
+	padding:30px 0 0 0;
+	text-align:left;
+	float:left;
+	height:90px;
+	clear:both;
+}
+
+#Nav{
+	width: 100%;
+    height: 50px;
+    clear: both;
+}
+
+#Side{
+	width:270px;
+	margin:10px 0 0 0;
+	padding:0 0 0 0;
+	float:right;
+}
+
+#Main{
+	width:675px;
+	margin:10px 0 0 0;
+	padding:0 0 30px 10px;
+	text-align:left;
+	float:left;
+}
+
+#Bottom{
+	width:100%;
+	margin:0 0 0 0;
+	padding:45px 0 0 0;
+	text-align:center;
+    clear:both;
+    height:75px;
+}
+
+/*————————————导航栏————————————*/
+#Nav li{
+	font-size: 1.3em;;
+}
+
+#Nav a{
+	float: left;
+	text-decoration: none;
+	line-height:16px;
+	padding-top: 7px;
+	padding-right: 20px;
+	padding-bottom: 7px;
+	padding-left: 20px;
+}
+
+#Nav a:link {
+	color: white;
+}
+#Nav a:visited {
+	color: white;
+}
+#Nav a:hover {
+	color:white;
+	background-color: #ff1461;
+}
+
+#Nav a:active {
+	color:white;
+	background: #ff1461;
+}
+/*————————————文章区————————————*/
+.list{
+	margin-bottom:20px;
+}	
+
+.list li{
+	background:#fff;
+	padding:20px;
+	line-height:26px;
+	margin-bottom:20px;
+}
+
+.comment-box{
+	text-align:right
+}
+.comment{
+	border-radius: 2px;
+	border: 1px solid #dfd5cb;
+	color: #9e8c7b;
+	background-color: #FFF;
+	display: inline-block;    
+	height: 28px;
+	line-height: 28px;
+	width: 80px;
+    text-align:center; margin-right:10px;}
+
+/*————————————侧边栏————————————*/
+.function {
+	float:left;
+	width:100%;
+	margin:0 0 10px 0;
+	padding:0;
+	text-align:left;
+	background:#fff;
+	margin-bottom:20px;
+}
+.function .function_t{
+	
+	font-size:1em;
+	height:20px;
+	line-height:20px;
+	color:#333333;
+	background-color: #f2f2f2;
+	margin-bottom: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 1em;
+}
+.content a{
+	color:#08c;
+	margin-right:10px;
+}
+
+/*————————————标题(logo)————————————*/
+
+#Title{
+	position: relative;
+	bottom: 15px;
+	float:left;
+	height: 100px;
+	width: 100px;
+}
+
+/*————————————版权————————————*/
+
+#copy{
+	font-size:0.9em;
+	height:20px;
+	margin:0;
+	padding:0;
+	text-align:left;
+	font-weight:normal;
+}
+
+/*————————————分页————————————*/
+span.page{
+	color:#666;
+	font-weight:bolder;
+	padding:2px 5px 2px 5px;
+	margin:4px;
+	border:1px solid #cccccc;
+}
+
+
+
+

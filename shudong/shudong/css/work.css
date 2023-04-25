@@ -1,0 +1,170 @@
+*{
+	margin: 0;
+	top: 0;
+}
+body{
+	background-color: rgb(245,246,247);
+}
+body a{
+	color: black;
+	text-decoration: none;
+}
+
+.Header{
+	width: 100%;
+	height: 55px;
+	background-color: white;
+}
+.logo img{
+	position: absolute;
+	top: 5px;
+	left: 10px;
+}
+.top ul li{
+	list-style: none;
+	position: relative;
+	margin-top: 15px;
+	float: left;
+	padding: 0 10px;
+	border-right: palegreen 1px solid;
+}
+.top a{
+	display: block;
+	width: 60px;
+	height: 25px;
+	text-align: center;
+}
+.top ul li a:active{
+	color: #98FB98;
+	font-size: 17px;
+}
+
+/* 设置搜索框 */
+.search input{
+	width: 210px;
+	height: 25px;
+	border: #999999 1px solid;
+	border-radius: 10px;;
+	position: absolute;
+	top:15px;
+	left: 550px;
+}
+.top img{
+	width: 18px;
+	position: absolute;
+	left: 735px;
+	top: 20px;
+}
+
+/* 设置创作中心进入按钮 */
+.editor a{
+	display: block;
+	width: 115px;
+	height: 40px;
+}
+.editor{
+	position: absolute;
+	top: 10px;
+	right: 25px;
+	border-radius: 5px;
+	background-color: forestgreen;
+	width: 115px;
+	height: 40px;
+	text-align: center;
+	font-size: 17px;
+	line-height: 40px;
+}
+.editor img{
+	position: relative;
+	top: 4px;
+	left: -5px;
+}
+
+/* 设置垂直导航条 */
+.menu1{
+	position: relative;
+	top: 10px;
+	left: 10px;
+	background-color: white;
+	width: 185px;
+	height: 900px;
+}
+.menu1 ul li{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	position: relative;
+	left: -10px;
+	top: -4px;
+}
+.menu1 ul a{
+	display: block;
+	width: 120px;
+	height: 45px;
+	border-top: 1px #999999 solid;
+	margin-top: -1px; /* 去除重叠部分的边框 */
+	line-height: 45px;
+}
+.menu1 ul img{
+	width: 15px;
+	position: relative;
+	left: -20px;
+}
+
+.main_content{
+	position: absolute;
+	margin-top: 65px;
+	margin-left: 205px;
+	background-color: white;
+	width: 100%;
+	height: 100%;
+}
+
+/* .main_content_top{
+	width: 100%;
+	height: 10px;
+} */
+
+#content_kind select{
+	position: relative;
+	top: 10px;
+	left: 20px;
+	width: 100px;
+	height: 35px;
+	font-size: 15px;
+	border-radius: 10px;
+}
+
+/* 设置左侧主要部分的顶部 */
+.main_content_top form input{
+	position: relative;
+	left: 215px;
+	top: -25px;
+	height: 30px;
+	border-radius: 10px;
+	border: #008000 1px solid;
+}
+.main_content_top form button{
+	background-color: #008000;
+	width: 50px;
+	height: 30px;
+	border-radius: 10px;
+	position: relative;
+	top: -25px;
+	left: 210px;
+}
+
+.main_work ul li{
+	list-style-type: none;
+}
+
+.main_work{
+	position: relative;
+	left: 20px;
+	border-radius: 5px;
+	background-color: #E9E9E9;
+}
+
+.1{
+	height: 200px;
+}

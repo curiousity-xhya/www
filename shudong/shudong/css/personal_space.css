@@ -1,0 +1,146 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	background-image: url(../img/personai%20space.jpg);
+	/* 设置背景图片拉伸铺满整个屏幕 */
+	background-size:100% 100%;
+	background-attachment:fixed;
+}
+body a{
+	color: black;
+	text-decoration: none;
+}
+
+.header{
+	width: 100%;
+	height: 40px;
+}
+/* 设置头部导航条 */
+.header ul li{
+	list-style: none;
+	position: relative;
+	margin-top: 10px;
+	float: left;
+	padding: 0 20px;
+	border-right: palegreen 1px solid;
+}
+.header a{
+	display: block;
+	width: 60px;
+	height: 25px;
+	text-align: center;
+}
+.header ul li a:active{
+	color: #98FB98;
+	font-size: 17px;
+}
+
+/* 设置搜索框 */
+.search{
+	height: 30px;
+	width: 400px;
+	border-radius: 10px;/* 设置弧度 */
+	position: absolute;
+	margin-left: 100px;
+	margin-top: 5px;
+}
+.header img{
+	position: absolute;
+	width: 20px;
+	margin-left: 480px;
+	margin-top: 11px;
+}
+
+#login{
+	float: left;
+	background-color: white;
+	width: 100px;
+	height: 30px;
+	border-radius: 8px;
+	font-size: 17px;
+	text-align: center;
+	position: relative;
+	left: 70%;
+	top: -30px;
+}
+
+/* 设置左侧个人中心等选项 */
+.home{
+	width: 190px;
+	height: 250px;
+	background-color: #FFFFFF;
+	position: absolute;		/* 相对于父元素定位 */
+	margin-top: 50px;
+	left: 300px;
+	position: fixed;
+}
+
+/* 设置垂直导航条 */
+.home ul{
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+.home ul li{
+	text-align: center;
+}
+.home ul a{
+	display: block;	/*垂直排列，且点击区域为方块*/
+	width: 190px;	/*block可设置width*/
+	line-height: 50px; /*获得垂直居中效果*/
+	background-color: #98FB98;
+	border: 1px solid white;
+}
+.home ul li a:active{
+	color: yellow;
+	font-size: 17px;
+}
+
+/* 设置主体内容部分 */
+/* 设置框大小以及背景颜色 */
+.main{
+	width: 900px;
+	height: 500px;
+	background-color: rgb(248,248,248);
+	position: relative;
+	top: 50px;
+	left: 550px;
+}
+.h2,
+.hobbytitle{
+	height: 60px;
+}
+.h2 p,
+.hobbytitle p{
+	font-size: 20px;
+	font-weight: bold;
+	position: relative;
+	top: 20px;
+	left: 20px;
+}
+.main ul{
+	list-style: none;
+	font-size: 15px;
+	line-height: 60px;
+	position: relative;
+	left: 35px;
+}
+.main a,
+.acation a{
+	display:block;
+	width:900px;
+	height: 60px;
+}
+.content input,
+.acation input{
+	width: 785px;
+	height: 50px;
+	float: right;
+	position: relative;
+	left: -35px;
+	top: 5px;
+	border: none;
+	outline: none;
+}

@@ -1,0 +1,371 @@
+<!DOCTYPE html
+	PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en">
+	<!-- wow，天，你打开调试器？好吧，我接受了。我写这段代码时，知道我在做什么的只有老天和我。但是现在，只有老天懂了。兄弟儿，你要是想搞懂请随意，我反正是不挣扎了 -->
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="viewport"
+			content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>学生会</title>
+		<link rel="stylesheet" href="css/style.css" type="text/css" />
+		<script type='text/javascript' src='js/modernizr.min.js'></script>
+		<script src="js/index.js" type="text/javascript" charset="utf-8"></script>
+		<script type='text/javascript'>
+			var CSSettings = {
+				"pluginPath": "module"
+			};
+		</script>
+		<!-- 是不是有人改我代码了，这写的是什么我怎么不记得了嗷 -->
+		<script type='text/javascript' src='js/cute.slider.js'></script>
+		<script type='text/javascript' src='js/cute.transitions.all.js'></script>
+		<link rel="icon" href="data:;base64,=">
+		<link rel="stylesheet" href="css/bootstrap.css">
+		<script src="js/jquery-3.4.1.js"></script>
+		<script src="js/bootstrap.js"></script>
+		<script src="js/main.js"></script>
+		<link rel="stylesheet" href="./frame/assets/css/index.css">
+
+
+	</head>
+
+	<body>
+		<!--loading-->
+		<div class="loader" id="loading">
+			<div class="lds-ripple">
+				<div></div>
+				<div></div>
+			</div>
+		</div>
+		<!-- 为什么现在我会在这里傻BB的加注释？？我觉得嗷看代码多无聊，小爱童鞋，给我讲个笑话！咳咳，正事，这段代码就是那个biubiubiu~的载入画面 -->
+
+
+		<!--navbar-->
+		<nav class="navbar navbar-fixed-top navbar-inverse">
+			<div class="container-fluid">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+						data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="#">Student Union</a>
+				</div>
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav">
+						<li class="active"><a href="#" onclick="top1()">社团简介 <span class="sr-only">(current)</span></a>
+						</li>
+						<ul class="nav navbar-nav navbar-right">
+							<li><a href="#" onclick="come()">&nbsp;&nbsp;&nbsp;&nbsp;加入我们</a></li>
+						</ul>
+				</div>
+			</div>
+		</nav>
+		<!-- 导航栏，啊~困了~ -->
+		<!--轮播图-->
+		<div class="container">
+			<div class="c-860 c-demoslider top_carousel">
+				<div id="cuteslider_3_wrapper" class="cs-circleslight">
+					<div id="cuteslider_3" class="cute-slider" data-width="960" data-height="420" data-overpause="true">
+						<ul data-type="slides">
+							<li data-delay="5" data-src="5"
+								data-trans3d="tr6,tr17,tr22,tr23,tr29,tr27,tr32,tr34,tr35,tr53,tr54,tr62,tr63,tr4,tr13,tr45"
+								data-trans2d="tr3,tr8,tr12,tr19,tr22,tr25,tr27,tr29,tr31,tr34,tr35,tr38,tr39,tr41">
+								<img src="https://gitee.com/DarcyKon/darcy/raw/master/01.jpg" data-thumb="https://gitee.com/DarcyKon/darcy/raw/master/01a.jpg" />
+							</li>
+							<li data-delay="5" data-src="5"
+								data-trans3d="tr6,tr17,tr22,tr23,tr26,tr27,tr29,tr32,tr34,tr35,tr53,tr54,tr62,tr63,tr4,tr13"
+								data-trans2d="tr3,tr8,tr12,tr19,tr22,tr25,tr27,tr29,tr31,tr34,tr35,tr38,tr39,tr41">
+								<img src="https://gitee.com/DarcyKon/darcy/raw/master/blank.png" data-src="https://gitee.com/DarcyKon/darcy/raw/master/02.jpg" data-thumb="https://gitee.com/DarcyKon/darcy/raw/master/02a.jpg" />
+							</li>
+							<li data-delay="5" data-src="5"
+								data-trans3d="tr6,tr17,tr22,tr23,tr26,tr27,tr29,tr32,tr34,tr35,tr53,tr54,tr62,tr63,tr4,tr13"
+								data-trans2d="tr3,tr8,tr12,tr19,tr22,tr25,tr27,tr29,tr31,tr34,tr35,tr38,tr41">
+								<img src="https://gitee.com/DarcyKon/darcy/raw/master/blank.png" data-src="https://gitee.com/DarcyKon/darcy/raw/master/03.jpg" data-thumb="https://gitee.com/DarcyKon/darcy/raw/master/03a.jpg" />
+							</li>
+							<li data-delay="5" data-src="5"
+								data-trans3d="tr6,tr17,tr22,tr23,tr26,tr27,tr29,tr32,tr34,tr35,tr53,tr54,tr62,tr63,tr4,tr13"
+								data-trans2d="tr3,tr8,tr12,tr19,tr22,tr25,tr27,tr29,tr31,tr34,tr35,tr38,tr39,tr41">
+								<img src="https://gitee.com/DarcyKon/darcy/raw/master/blank.png" data-src="https://gitee.com/DarcyKon/darcy/raw/master/04.jpg" data-thumb="https://gitee.com/DarcyKon/darcy/raw/master/04a.jpg" />
+							</li>
+							<li data-delay="5" data-src="5"
+								data-trans3d="tr6,tr17,tr22,tr23,tr26,tr27,tr29,tr32,tr34,tr35,tr53,tr54,tr62,tr63,tr4,tr13"
+								data-trans2d="tr3,tr8,tr12,tr19,tr22,tr25,tr27,tr29,tr31,tr34,tr35,tr38,tr39,tr41">
+								<img src="https://gitee.com/DarcyKon/darcy/raw/master/blank.png" data-src="https://gitee.com/DarcyKon/darcy/raw/master/05.jpg" data-thumb="https://gitee.com/DarcyKon/darcy/raw/master/05a.jpg" />
+							</li>
+							<li data-delay="5" data-src="5"
+								data-trans3d="tr6,tr17,tr22,tr23,tr26,tr27,tr29,tr32,tr34,tr35,tr53,tr54,tr62,tr63,tr4,tr13"
+								data-trans2d="tr3,tr8,tr12,tr19,tr22,tr25,tr27,tr29,tr31,tr34,tr35,tr38,tr39,tr41">
+								<img src="https://gitee.com/DarcyKon/darcy/raw/master/blank.png" data-src="https://gitee.com/DarcyKon/darcy/raw/master/06.jpg" data-thumb="https://gitee.com/DarcyKon/darcy/raw/master/06a.jpg" />
+							</li>
+						</ul>
+						<ul data-type="controls">
+							<li data-type="captions"></li>
+							<li data-type="link"></li>
+							<li data-type="video"></li>
+							<li data-type="slideinfo"></li>
+							<li data-type="circletimer"></li>
+							<li data-type="previous"></li>
+							<li data-type="next"> </li>
+							<li data-type="bartimer"></li>
+							<li data-type="slidecontrol" data-thumb="true" data-thumbalign="up"></li>
+						</ul>
+					</div>
+					<div class="cute-shadow"><img src="https://gitee.com/DarcyKon/darcy/raw/master/2%E5%8F%B7/shadow.png" alt="shadow" /></div>
+				</div>
+			</div>
+		</div>
+		<!-- 轮播帅吧，我不会告诉你我用人家封装好的还就在frame文件夹里，嘻嘻嘻 -->
+
+		<!--页眉-->
+		<div class="container">
+			<div class="page-header">
+				<h1>社团简介 <small> <br />&nbsp;Introduction</small></h1>
+			</div>
+		</div>
+		<!--简介（栅格）-->
+
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-4 col-lg-push-8">
+					<img class="kx_img" src="https://gitee.com/DarcyKon/darcy/raw/master/%E7%AC%AC%E4%B8%80%E6%AC%A1%E5%85%A8%E4%BD%93%E5%A4%A7%E4%BC%9A.jpg" height="368" width="496" />
+				</div>
+				<div class="col-lg-8 col-lg-pull-4">
+
+					<h3>学生会简介</h3>
+					<p>&nbsp;&nbsp;&nbsp;&nbsp;南京邮电大学通达学院学生会是在学院党委领导下、学院团委指导下的学生自我管理、自我教育、自我服务、自我发展的主要学生组织，是学校联系学生的桥梁和纽带。以习近平新时代中国特色社会主义思想为指导，以加强对同学的政治引领为根本，以全心全意服务同学为宗旨。坚持“团结、务实、奉献、创新”的工作方针。及时向同学传达党的声音和主张，引导广大同学自觉把个人理想融入党和人民的共同奋斗之中。面向全体同学，坚持从同学中来、到同学中去，听取、收集同学在思想成长、学业发展、身心健康、社会融入、权益维护等方面的普遍需求和现实困难，及时反馈学校，帮助有效解决。
+					</p>
+					<div class="container p2">
+						<div class="row">
+							<div class="col-lg-8 col-xs-12">
+								<p>
+									笔墨讲坛、第二次学代会、宿舍文化节、立人大讲堂等活动在学生会的组织策划下，都得以圆满落幕，但是，我们有理由相信，未来的你们，会带着新的活力，融入到我们的大家庭！
+								</p>
+								<div class="col-lg-12">
+									<img src="https://gitee.com/DarcyKon/darcy/raw/master/2019031011.gif" height="117" width="480" />
+								</div>
+								<a href="#" name="bumen"></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- 我怎么会用，啥啥啥？窜台了，我希望你，是我独家的记忆~摆在心底，不管别ren... -->
+
+
+		<!--部门介绍-->
+		<div class="container margin_collapse">
+			<!--页眉-->
+			<div class="page-header">
+				<h1>部门简介<small> <br />&nbsp;Introduction</small></h1>
+			</div>
+			<!--collapse-->
+			<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+				<div class="panel panel-default">
+					<div class="panel-heading" role="tab" id="headingOne">
+						<h4 class="panel-title">
+							<a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne"
+								aria-expanded="true" aria-controls="collapseOne">
+								办公室
+							</a>
+						</h4>
+					</div>
+				</div>
+
+				<div class="panel panel-default">
+					<div class="panel-heading" role="tab" id="headingTwo">
+						<h4 class="panel-title">
+							<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
+								href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+
+								学术创新部
+							</a>
+						</h4>
+					</div>
+
+				</div>
+
+				<div class="panel panel-default">
+					<div class="panel-heading" role="tab" id="headingThree">
+						<h4 class="panel-title">
+							<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
+								href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+								媒体宣传部
+							</a>
+						</h4>
+					</div>
+				</div>
+
+
+				<div class="panel panel-default">
+					<div class="panel-heading" role="tab" id="headingFour">
+						<h4 class="panel-title">
+							<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
+								href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+								社团管理部
+							</a>
+						</h4>
+					</div>
+				</div>
+				<div class="panel panel-default">
+					<div class="panel-heading" role="tab" id="headingFive">
+						<h4 class="panel-title">
+							<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
+								href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+								权益服务部
+							</a>
+						</h4>
+					</div>
+				</div>
+				<div class="panel panel-default">
+					<div class="panel-heading" role="tab" id="headingFive">
+						<h4 class="panel-title">
+							<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
+								href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+								文体发展部
+							</a>
+						</h4>
+					</div>
+				</div>
+			</div>
+
+			<!--缩略图（寄语）-->
+
+		</div>
+		</div>
+		<!-- 栅栏结构就是不一样，省了我多少心思 -->
+		<!--加入我们-->
+		<div class="container signup">
+			<!-- 模态框（Modal） -->
+			<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal"
+				style="width: calc(100%);" id="come">
+				立即报名
+			</button>
+			<!-- Modal -->
+			<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+				<div class="modal-dialog" role="document">
+					<div class="modal-content">
+
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+									aria-hidden="true">×</span></button>
+							<h4 class="modal-title" id="myModalLabel">报名</h4>
+						</div>
+
+						<div id="myModal" class="modal-body">
+							<form id="updateform" method="POST" action="./server/signup.php">
+								<div class="form-group">
+									<h4>以下内容请如实填写！</h4>
+									<label for="loginname" class="control-label">姓名:</label>
+									<input type="text" class="form-control" id="loginname" name="loginname"
+										placeholder="请输入姓名...">
+								</div>
+
+								<div class="form-group">
+									<label for="professional" class="control-label">专业名称</label>
+									<input type="text" class="form-control" id="professionalname"
+										name="professionalname" placeholder="请输入专业名称...">
+								</div>
+
+								<div class="form-group">
+									<label for="college" class="control-label">学院名称:</label>
+									<input type="text" class="form-control" id="collegename" name="collegename"
+										placeholder="请输入学院名称...">
+								</div>
+
+								<div class="form-group">
+									<label for="phone" class="control-label">电话:</label>
+									<input type="text" class="form-control" id="phone" name="phone"
+										placeholder="手机号码...">
+								</div>
+
+								<div class="form-group">
+									<label for="QQ" class="control-label">QQ:</label>
+									<input type="text" class="form-control" id="QQ" name="QQ" placeholder="请输入QQ号码...">
+								</div>
+
+								<div class="form-group">
+									<label for="department" class="control-label">选择部门:</label>
+									第一志愿: <select class="form-control" name="departmentone" id="departmentone">
+										<option value="请选择">请选择</option>
+										<option value="办公室">办公室</option>
+										<option value="学术创新部">学术创新部</option>
+										<option value="媒体宣传部">媒体宣传部</option>
+										<option value="社团管理部">社团管理部</option>
+										<option value="权益服务部">权益服务部</option>
+										<option value="文体发展部">文体发展部</option>
+									</select>
+									第二志愿: <select class="form-control" name="departmenttwo" id="departmenttwo">
+										<option value="请选择">请选择</option>
+										<option value="办公室">办公室</option>
+										<option value="学术创新部">学术创新部</option>
+										<option value="媒体宣传部">媒体宣传部</option>
+										<option value="社团管理部">社团管理部</option>
+										<option value="权益服务部">权益服务部</option>
+										<option value="文体发展部">文体发展部</option>
+									</select>
+								</div>
+
+								<div class="form-group">
+									<input type="radio" id="gender" value="男" name="gender" checked> 男
+									<input type="radio" id="gender" value="女" name="gender"> 女
+								</div>
+
+								<div class="form-group">
+									<textarea class="form-control" id="reason" name="reason"
+										placeholder="请输入申报理由..."></textarea>
+								</div>
+
+								<div class="text-center">
+									<button type="button" class="btn btn-default right" data-dismiss="modal"><a href="index.html">取消</a></button>
+                        		    <button id="sign" type="submit" class="btn btn-primary" >提交</button>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!--footer-->
+		<div class="foot_copy navbar-inverse">
+			<hr />
+			<!-- 兄弟儿~辛苦辛苦，下面的 # 帮我换换哈！ -->
+			<b><a href="#">&copy; Copyright by 科协信息技术中心</a></b>
+			<br />最终解释权归作者所有
+		</div>
+		<!-- 这个最终解释权归谁咱也说不准啊哈哈哈 -->
+
+
+
+		<script type="text/javascript">
+			var cuteslider3 = new Cute.Slider();
+			cuteslider3.setup("cuteslider_3", "cuteslider_3_wrapper", "css/slider-style.css");
+			cuteslider3.api.addEventListener(Cute.SliderEvent.CHANGE_START, function(event) {});
+			cuteslider3.api.addEventListener(Cute.SliderEvent.CHANGE_END, function(event) {});
+			cuteslider3.api.addEventListener(Cute.SliderEvent.WATING, function(event) {});
+			cuteslider3.api.addEventListener(Cute.SliderEvent.CHANGE_NEXT_SLIDE, function(event) {});
+			cuteslider3.api.addEventListener(Cute.SliderEvent.WATING_FOR_NEXT, function(event) {});
+		</script>
+		<script type="text/javascript">
+			$(document).ready(function() {
+				var add = $("#loading");
+				setTimeout(function() {
+					add.show();
+					setTimeout(
+						function() {
+							add.hide();
+						}, 1000);
+				}, 1000);
+			});
+		</script>
+
+	</body>
+
+</html>

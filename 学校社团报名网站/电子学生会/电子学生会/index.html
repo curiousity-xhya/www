@@ -1,0 +1,405 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en">
+<!-- wow，天，你打开调试器？好吧，我接受了。我写这段代码时，知道我在做什么的只有老天和我。但是现在，只有老天懂了。兄弟儿，你要是想搞懂请随意，我反正是不挣扎了 -->
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>电子工程学院学生会</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+    <script type='text/javascript' src='js/modernizr.min.js'></script>
+    <script src="js/index.js" type="text/javascript" charset="utf-8"></script>
+    <script type='text/javascript'>
+        var CSSettings = {
+            "pluginPath": "module"
+        };
+    </script>
+    <!-- 是不是有人改我代码了，这写的是什么我怎么不记得了嗷 -->
+    <script type='text/javascript' src='js/cute.slider.js'></script>
+    <script type='text/javascript' src='js/cute.transitions.all.js'></script>
+    <link rel="icon" href="data:;base64,=">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="js/jquery-3.4.1.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/main.js"></script>
+    <link rel="stylesheet" href="./frame/assets/css/index.css">
+
+
+</head>
+
+<body>
+    <!--loading-->
+    <div class="loader" id="loading">
+        <div class="lds-ripple">
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+    <!-- 为什么现在我会在这里傻BB的加注释？？我觉得嗷看代码多无聊，小爱童鞋，给我讲个笑话！咳咳，正事，这段代码就是那个biubiubiu~的载入画面 -->
+
+
+    <!--navbar-->
+    <nav class="navbar navbar-fixed-top navbar-inverse">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">电子工程学院学生会</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#" onclick="top1()">社团简介 <span class="sr-only">(current)</span></a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#" onclick="come()">加入我们</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- 导航栏，啊~困了~ -->
+    <br><br>
+    <br><br>
+    <div class="container">
+        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+            </ol>
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                    <img src="https://gitee.com/xhystriving/community-photo/raw/master/%E5%9B%BE%E7%89%871.png" alt="...">
+                    <div class="carousel-caption">
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="https://gitee.com/xhystriving/community-photo/raw/master/%E5%9B%BE%E7%89%872.png" alt="..." width="350px">
+                    <div class="carousel-caption">
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="https://gitee.com/xhystriving/community-photo/raw/master/%E5%9B%BE%E7%89%873.png" alt="...">
+                    <div class="carousel-caption">
+                    </div>
+                </div>
+            </div>
+            <!-- Controls -->
+            <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+    <!--页眉-->
+    <div class="container">
+        <div class="page-header">
+            <h1>社团简介 <small> <br />&nbsp;Introduction</small></h1>
+        </div>
+    </div>
+    <!--简介（栅格）-->
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-lg-push-8">
+                <img class="kx_img" src="https://gitee.com/xhystriving/community-photo/raw/master/%E5%9B%BE%E7%89%874.png" height="368" width="496" />
+            </div>
+            <div class="col-lg-8 col-lg-pull-4">
+
+                <h3>电子工程学院学生会简介</h3>
+                <p>电子工程学院学生会是通达学院五个二级学院学生会中的重要一员，是在校党委和校团委的指导下参与学院事务的自发性学生自治组织之一，发挥着联系学院，老师，学生的纽带作用，起着举足轻重的作用。在日常的学习生活中，学生会始终贯彻全心全意为服务同学的宗旨，担任着引领学生思潮，建设校园积极风气，协调老师与学生关系的任务，实现学生的自我教育、自我管理、自我服务。而电子工程学院学生会有主席团，外联部，组织部，办公中心，宣传部组成。
+                </p>
+
+                <div class="container">
+                    <div class="row line">
+                        <div class="col-lg-2 col-xs-6">
+                            <ul>
+                                <li>办公中心</li>
+                                <li>主席团</li>
+                                <li>宣传部</li>
+                                <li>组织部</li>
+                                <li>外联部</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 我怎么会用，啥啥啥？窜台了，我希望你，是我独家的记忆~摆在心底，不管别ren... -->
+
+
+    <!--部门介绍-->
+    <div class="container margin_collapse">
+        <!--页眉-->
+        <div class="page-header">
+            <h1>部门简介<small> <br />&nbsp;Introduction</small></h1>
+        </div>
+        <!--collapse-->
+        <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+            <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="headingOne">
+                    <h4 class="panel-title">
+                        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne"
+                            aria-expanded="true" aria-controls="collapseOne">
+                            电子工程学院学生会
+                        </a>
+                    </h4>
+                </div>
+                <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                    <div class="panel-body">
+                        更多详情点击下方文字查取↓
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="headingThree">
+                    <h4 class="panel-title">
+                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
+                            href="#collapseTwo" aria-expanded="false" aria-controls="collapseThree">
+                            主席团
+                        </a>
+                    </h4>
+                </div>
+                <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                    <div class="panel-body">
+                        <b>主席团：</b>
+                        （1）主席团成员是学生会的领导人，有主席和副主席组成。
+                        （2）全面主持学生会日常工作，处理日常事务，参与制定工作计划和活动方案。
+                        （3）代表学生会向上级部门汇报工作，并及时传达上级有关会议精神。及时向学生会指导老师和上级部门汇报学生会工作情况。
+                        （4）指导，帮助，检查，督促学生会各职能部门，指导和监督各部门工作的开展和实施情况。
+                        （5）做好学期的工作部署，定期召开学生会的工作总结，确定各方向的工作方向和工作目标。
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="headingSix">
+                    <h4 class="panel-title">
+                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
+                            href="#collapseThree" aria-expanded="false" aria-controls="collapseSix">
+                            外联部
+                        </a>
+                    </h4>
+                </div>
+                <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSix">
+                    <div class="panel-body">
+                        <b>外联部:</b>
+                        外联部是一个起着支撑性作用的部门。
+                        （1）通过部门优势、资源和能力为本部门和其他部门的活动展开提高资金资助。
+                        （2）与商家进行联络，通过校企合作的方式为各个活动提供足够的资金资助。
+                        联系其他社团进行交流，合作。
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="headingTwo">
+                    <h4 class="panel-title">
+                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
+                            href="#collapseFour" aria-expanded="false" aria-controls="collapseTwo">
+                            办公中心
+                        </a>
+                    </h4>
+                </div>
+                <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                    <div class="panel-body">
+                        <b>办公中心：</b>办公中心主要负责文职工作。
+                        （1）协调学生会各部门，协助主席团完成学生会事务性工作。
+                        （2）为活动提供策划案，创作活动的宣传文案，活动结束后编写相关新闻稿。
+                        （3）负责做好每次会议的通知、组织和记录工作。
+                        （4）负责学生会的文件和财务管理。
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="headingFour">
+                    <h4 class="panel-title">
+                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
+                            href="#collapseFive" aria-expanded="false" aria-controls="collapseFour">
+                            宣传部
+                        </a>
+                    </h4>
+                </div>
+                <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+                    <div class="panel-body">
+                        <b>宣传部：</b>宣传部是学生会宣发相关消息事宜的重要部门。
+                        （1）制作学生会活动的宣传海报，并进行张贴。
+                        （2）管理学生会公众号，并在公号上及时推送学院活动。
+                        （3）宣传学院学生在各项工作中的成绩及学生会各部门的工作情况。
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="headingFive">
+                    <h4 class="panel-title">
+                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
+                            href="#collapseSix" aria-expanded="false" aria-controls="collapseFive">
+                            组织部
+                        </a>
+                    </h4>
+                </div>
+                <div id="person"></div>
+                <div id="collapseSix" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
+                    <div class="panel-body">
+
+                        <b>组织部:</b>组织部是策划与组织学生活动的部门。
+                        （1）协助团委加强全系共青团思想建设、组织建设。
+                        （2）指导和帮助班委开展工作。
+                        （3）负责组织和开展学院的文化和体育活动，丰富学生的课余生活。
+                        （4）组织开展各科目的考前辅导。
+                        （5）为活动的举办安排场地，提供相应物资。
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+        <!--加入我们-->
+        <div class="container signup">
+            <!-- 模态框（Modal） -->
+            <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal"
+                style="width: calc(100%);" id="come">
+                立即报名
+            </button>
+            <!-- Modal -->
+            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                                    aria-hidden="true">×</span></button>
+                            <h4 class="modal-title" id="myModalLabel">报名</h4>
+                        </div>
+
+                        <div id="myModal" class="modal-body">
+                            <form id="updateform" method="post" action="./server/signup.php">
+                                <div class="form-group">
+                                    <h4>以下内容请如实填写！</h4>
+                                    <label for="loginname" class="control-label">姓名:</label>
+                                    <input type="text" class="form-control" id="loginname" name="loginname"
+                                        placeholder="请输入姓名...">
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="professional" class="control-label">专业名称</label>
+                                    <input type="text" class="form-control" id="professionalname"
+                                        name="professionalname" placeholder="请输入专业名称...">
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="college" class="control-label">学院名称:</label>
+                                    <input type="text" class="form-control" id="collegename" name="collegename"
+                                        placeholder="请输入学院名称...">
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="phone" class="control-label">电话:</label>
+                                    <input type="text" class="form-control" id="phone" name="phone"
+                                        placeholder="手机号码...">
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="QQ" class="control-label">QQ:</label>
+                                    <input type="text" class="form-control" id="QQ" name="QQ" placeholder="请输入QQ号码...">
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="department" class="control-label">选择部门:</label>
+                                    第一志愿: <select class="form-control" name="departmentone" id="departmentone">
+                                        <option value="请选择">请选择</option>
+                                        <option value="主席团">主席团</option>
+                                        <option value="办公中心">办公中心</option>
+                                        <option value="外联部">外联部</option>
+                                        <option value="宣传部">宣传部</option>
+                                        <option value="外联部">外联部</option>
+                                    </select>
+                                    第二志愿: <select class="form-control" name="departmenttwo" id="departmenttwo">
+                                        <option value="请选择">请选择</option>
+                                        <option value="主席团">主席团</option>
+                                        <option value="办公中心">办公中心</option>
+                                        <option value="外联部">外联部</option>
+                                        <option value="宣传部">宣传部</option>
+                                        <option value="外联部">外联部</option>
+                                    </select>
+                                </div>
+
+                                <div class="form-group">
+                                    <input type="radio" id="gender" value="男" name="gender" checked> 男
+                                    <input type="radio" id="gender" value="女" name="gender"> 女
+                                </div>
+
+                                <div class="form-group">
+                                    <textarea class="form-control" id="reason" name="reason"
+                                        placeholder="请输入申报理由..."></textarea>
+                                </div>
+
+                                <div class="text-center">
+                                    <span id="returnMessage" class="glyphicon"> </span>
+                                    <button type="button" class="btn btn-default right" data-dismiss="modal"><a href="index.html">取消</a></button>
+                        		    <button id="sign" type="submit" class="btn btn-primary" >提交</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--footer-->
+        <div class="foot_copy navbar-inverse">
+            <hr />
+            <b><a href="#">&copy; Copyright by 信息技术中心</a></b>
+            <br />最终解释权归作者所有
+        </div>
+        <!-- 这个最终解释权归谁咱也说不准啊哈哈哈 -->
+
+
+
+        <script type="text/javascript">
+            var cuteslider3 = new Cute.Slider();
+            cuteslider3.setup("cuteslider_3", "cuteslider_3_wrapper", "css/slider-style.css");
+            cuteslider3.api.addEventListener(Cute.SliderEvent.CHANGE_START, function (event) {});
+            cuteslider3.api.addEventListener(Cute.SliderEvent.CHANGE_END, function (event) {});
+            cuteslider3.api.addEventListener(Cute.SliderEvent.WATING, function (event) {});
+            cuteslider3.api.addEventListener(Cute.SliderEvent.CHANGE_NEXT_SLIDE, function (event) {});
+            cuteslider3.api.addEventListener(Cute.SliderEvent.WATING_FOR_NEXT, function (event) {});
+        </script>
+        <script type="text/javascript">
+            $(document).ready(function () {
+                var add = $("#loading");
+                setTimeout(function () {
+                    add.show();
+                    setTimeout(
+                        function () {
+                            add.hide();
+                        }, 1000);
+                }, 1000);
+            });
+        </script>
+        <script>
+            if (!/mobile/i.test(navigator.userAgent)) {
+                window.location = 'pc.html';
+            }
+        </script>
+
+</body>
+
+</html>

@@ -1,0 +1,278 @@
+body{
+	margin:0;
+	padding:0;
+	font-size:14px;
+	background:#91d4ff	repeat-x;
+}
+ul{/*表单*/
+	list-style-type:none;
+	list-style-position : outside;
+	margin:0 0 0 0;
+	padding:0 0 0 0;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+/*————————————各板块————————————*/
+#All{
+	width:1024px;
+	margin:0 auto;
+	padding:0 0 0 0;
+	text-align:center;
+	background:url("../images/")repeat-x;
+	background-position: center top;
+}
+
+#Page{
+	width:100%;
+	margin:0 auto;
+	padding:0 0 0 0;
+	text-align:center;
+	text-align:center;
+	background:url("../images/bg-bottom.png") repeat-x 0 bottom;
+}
+
+#Middle{
+	width:980px;
+	margin:0 auto;
+	padding:0 0 0 0;
+	text-align:left;
+}
+
+#Top{
+	width:980px;
+	margin:0 auto;
+	padding:30px 0 0 0;
+	text-align:left;
+	float:left;
+	height:90px;
+	clear:both;
+}
+
+#Nav{
+	width: 100%;
+    height: 30px;
+    clear: both;
+}
+
+#Side{
+	width:270px;
+	margin:10px 0 0 0;
+	padding:0 0 0 0;
+	float:right;
+}
+
+#Main{
+	width:675px;
+	margin:10px 0 0 0;
+	padding:0 0 30px 10px;
+	text-align:left;
+	float:left;
+}
+
+#Bottom{
+	width:100%;
+	margin:0 0 0 0;
+	padding:45px 0 0 0;
+	text-align:center;
+    clear:both;
+    height:75px;
+}
+
+/*————————————导航栏————————————*/
+#Nav li{
+	font-size: 1.3em;;
+	
+}
+
+#Nav a{
+	float: left;
+	text-decoration: none;
+	line-height:16px;
+	padding-top: 7px;
+	padding-right: 20px;
+	padding-bottom: 7px;
+	padding-left: 20px;
+}
+
+#Nav a:link {
+	color:black;
+}
+#Nav a:hover {
+	color:white;
+	background-color: #ff1461;
+}
+#Nav a:visited {
+	color:black;
+}
+/*————————————文章区————————————*/
+.list{
+	margin-bottom:20px;
+}	
+
+.list li{
+	background:#fff;
+	padding:20px;
+	line-height:26px;
+	margin-bottom:20px;
+}
+.c2 {
+	display: inline-block;
+	height: 20px;
+	width: 80px;
+	position: relative;
+	top: 20px;
+	left: 450px;
+	padding: 10px;
+}
+.c2  p{
+	position: absolute;
+	top: -4px;
+	left: 40px;
+}
+.c2 img{
+	margin: auto;
+	width: 24px;
+}
+	
+
+/*————————————侧边栏————————————*/
+
+.button{
+    position: relative;
+    top: 15px;
+    width: 110px;
+}
+.button button{
+    font-size: 15px;
+    font-weight: 400;
+    width: 100px;
+    height: 40px;
+    border-radius: 10px;
+    display: inline-block;
+	margin: 5px;
+}
+.button a{
+    text-decoration: none;
+    color: black;
+}
+.button a:hover{
+    color: rgb(173, 173, 174);
+}
+
+/*————————————标题(logo)————————————*/
+
+#Title{
+	position: relative;
+	bottom: 15px;
+	float:left;
+	height: 100px;
+	width: 100px;
+}
+
+/*————————————版权————————————*/
+
+#copy{
+	font-size:0.9em;
+	height:20px;
+	margin:0;
+	padding:0;
+	text-align:left;
+	font-weight:normal;
+}
+
+/*————————————分页————————————*/
+span.page{
+	color:#666;
+	font-weight:bolder;
+	padding:2px 5px 2px 5px;
+	margin:4px;
+	border:1px solid #cccccc;
+}
+
+/*————————————发帖————————————*/
+#send{
+	background: #f5f5f5;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	width: 100%;
+	box-sizing: border-box;
+	padding: 15px;
+}
+
+.fabu{
+	display: flex;
+	align-items: center;
+}
+.fabu li{
+	display: flex;
+	align-items: center;
+	margin-right: 15px;
+	text-decoration: none;
+	font-size: 18px;
+}
+.form{
+	margin-top: 15px;
+}
+.input-title{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.input-title input{
+	height: 36px;
+	box-sizing: border-box;
+	background: #ffffff;
+	width: 880px;
+	border: 1px solid #cccccc;
+	padding: 0 10px;
+	outline: none;
+}
+.input-content{
+	margin-top: 15px;
+	box-sizing: border-box;
+	border: 1px solid #cccccc;
+	padding: 10px 2px;
+}
+.input-content ul{
+	display: flex;
+	align-items: center;
+	color: #eee;
+}
+.input-content ul li{
+	display: flex;
+	align-items: center;
+	padding: 0 12px;
+}
+.input-content ul li img{
+	height: 17px;
+	display: block;
+	margin-right: 3px;
+}
+.input-content ul li a{
+	color:#00000c;
+	text-decoration: none;
+}
+.text{
+	box-sizing: border-box;
+	border: 1px solid #cccccc;
+	border-top: none;
+	background: #ffffff;
+	width: 100%;
+	height: 200px;
+	outline: none;
+	padding: 5px 10px;
+	resize: none;
+}
+.submit button{
+	background: #08c;
+	color: #fff;
+	height: 32px;
+	padding: 0 15px;
+	border: none;
+	outline: none;
+	margin-top: 10px;
+}
+
+
